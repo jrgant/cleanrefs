@@ -4,14 +4,16 @@
 \alias{format_refs}
 \title{Format references for Notion}
 \usage{
-format_refs(refdat, indir, outdir = NULL)
+format_refs(refdat, indir, outdir = NULL, write = TRUE)
 }
 \arguments{
 \item{refdat}{Name of CSV file containing Paperpile export (without .csv extension).}
 
 \item{indir}{Directory containing Paperile CSV export file.}
 
-\item{outdir}{Directory to write reformatted CSV file.}
+\item{outdir}{Directory to write reformatted CSV file. If not specified, function will use `indir` as default write directory.}
+
+\item{write}{Write formatted references to CSV (default: TRUE).}
 }
 \description{
 A function to format CSV Paperpile exports for import into Notion.

@@ -2,4 +2,5 @@
 
 export(format_refs)
 import(dplyr)
+import(stringr)
 importFrom(readr,read_csv)
