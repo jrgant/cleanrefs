@@ -43,7 +43,7 @@ format_refs <- function(refdat, indir, outdir = NULL, write = TRUE) {
     flout <- paste0(indir, "/", refdat, "_reformat", ".csv")
 
   } else {
-    flout <- paste0(indir, "/", refdat, "_reformat", ".csv")
+    flout <- paste0(outdir, "/", refdat, "_reformat", ".csv")
   }
 
   if (write) {
